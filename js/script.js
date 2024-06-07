@@ -1,26 +1,30 @@
-// Script for handling the contact form submission
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form from submitting normally
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent form submission
 
-    // Extract form data
+    // Get form values
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    // Validate form data (basic validation)
+    // Validate form values
     if (name === '' || email === '' || message === '') {
         alert('Please fill in all fields.');
         return;
     }
 
-    // Example: Display form data in console (replace with actual form handling code)
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Message:', message);
+    // Prepare data to be sent
+    const formData = {
+        name: name,
+        email: email,
+        message: message
+    };
 
-    // Display a success message to the user
-    alert('Thank you for your message! I will get back to you soon.');
+    // Log data to console (replace this with actual form submission logic)
+    console.log('Form data:', formData);
 
+    // Show success message
+    alert('Thank you for your message!');
+    
     // Clear the form
     document.getElementById('contactForm').reset();
 });
