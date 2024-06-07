@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     font-family: 'Arial', sans-serif;
-    color: #fff;
+    color: #000; /* Changed text color to black */
     margin: 0;
     padding: 0;
 }
@@ -24,7 +24,7 @@ body {
 /* Header section */
 header {
     background: #007bff; /* Changed header background color to a professional blue */
-    color: #fff; /* Changed header text color to white for better contrast */
+    color: #000; /* Changed header text color to black for better contrast */
     padding: 30px 0; /* Increased header padding for better spacing */
     text-align: center;
     border-radius: 15px; /* Matched border radius with the container */
@@ -42,7 +42,7 @@ header {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 20px; /* Increased margin for better separation */
-    border: 4px solid #fff;
+    border: 4px solid #000; /* Changed border color to black */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -56,7 +56,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000; /* Changed text color to black */
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em; /* Increased font size for better visibility */
