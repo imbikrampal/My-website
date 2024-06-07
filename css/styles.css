@@ -1,152 +1,123 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-/* General settings for body */
+/* Set a background image for the body */
 body {
     background-image: url('../background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
-    line-height: 1.6; /* Improved line-height for readability */
 }
 
-/* Container settings */
+/* Container for centering content */
 .container {
-    width: 85%;
-    max-width: 1100px; /* Adjusted for a cleaner look */
-    margin: 20px auto;
+    width: 90%; /* Adjusted for a slightly wider content area */
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.95); /* Slightly reduced transparency */
-    border-radius: 15px; /* Larger radius for a smoother look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    background: rgba(255, 255, 255, 0.95); /* Increased opacity for better readability */
+    border-radius: 15px; /* Slightly increased border radius */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
 }
 
-/* Header section settings */
+/* Header section */
 header {
-    background: rgba(0, 0, 0, 0.7); /* Slightly darker background for contrast */
-    color: #ffffff; /* Changed to white for better contrast */
-    padding: 30px 0; /* Increased padding for breathing space */
+    background: #007bff; /* Changed header background color to a professional blue */
+    color: #fff; /* Changed header text color to white for better contrast */
+    padding: 30px 0; /* Increased header padding for better spacing */
     text-align: center;
-    border-bottom: 5px solid #007bff; /* Added a bottom border for emphasis */
+    border-radius: 15px; /* Matched border radius with the container */
 }
 
 .header-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
 }
 
-/* Profile picture settings */
+/* Profile picture styling */
 .profile-pic {
-    width: 150px; /* Increased size for better visibility */
+    width: 150px; /* Enlarged profile picture for better visibility */
     height: auto;
     border-radius: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* Increased margin for better separation */
     border: 4px solid #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Larger shadow for prominence */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Navigation menu settings */
+/* Navigation menu */
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 30px; /* Increased gap for better spacing */
+    gap: 30px; /* Increased gap between menu items for better readability */
 }
 
 nav ul li a {
-    color: #ffffff; /* Keep consistent with header text */
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px; /* Added padding for better clickability */
-    border-radius: 5px;
-    transition: background 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    font-size: 1.1em; /* Increased font size for better visibility */
 }
 
 nav ul li a:hover {
-    background: #007bff; /* Blue background on hover */
-    color: #fff; /* Keep text color consistent on hover */
+    text-decoration: underline;
 }
 
 /* Section styling */
 .section {
-    padding: 50px 0; /* Increased padding for more space */
-    border-bottom: 1px solid #eee; /* Lighter border color */
+    padding: 40px 0;
 }
 
 h2 {
-    font-size: 2.5em; /* Larger font size for headings */
-    margin-bottom: 30px;
+    font-size: 2.5em; /* Increased font size for section headings */
+    margin-bottom: 30px; /* Increased margin for better separation */
     text-align: center;
-    color: #007bff; /* Consistent heading color */
 }
 
-/* List styling for different sections */
-.education-list, .research-list, .skills-list, .achievements-list {
-    list-style: none;
-    padding: 0;
-}
-
-.education-list li, .research-list li, .skills-list li, .achievements-list li {
-    margin-bottom: 25px;
-    padding: 15px;
-    background: #f9f9f9; /* Slightly lighter background */
-    border-radius: 10px; /* Larger radius for smoother look */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    transition: transform 0.3s; /* Transition for hover effect */
-}
-
-.education-list li:hover, .research-list li:hover, .skills-list li:hover, .achievements-list li:hover {
-    transform: scale(1.02); /* Slight scale-up effect on hover */
+/* List item styling */
+.section li {
+    margin-bottom: 25px; /* Increased margin between list items */
 }
 
 /* Form styling */
 .form-group {
-    margin-bottom: 25px; /* Increased margin for spacing */
+    margin-bottom: 30px; /* Increased margin between form groups */
 }
 
 .form-group label {
     display: block;
     font-weight: bold;
-    color: #333; /* Darker color for better contrast */
 }
 
 .form-group input, .form-group textarea {
     width: 100%;
-    padding: 15px; /* Increased padding for comfort */
-    border: 1px solid #ccc; /* Lighter border color */
-    border-radius: 5px;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+    padding: 12px; /* Increased padding for input fields */
+    border: 2px solid #ddd;
+    border-radius: 8px; /* Increased border radius for softer edges */
 }
 
 button {
-    background: #007bff;
+    background: #0056b3; /* Darkened button color for better contrast */
     color: #fff;
-    padding: 12px 24px; /* Increased padding for a bigger button */
+    padding: 12px 24px; /* Increased padding for better clickability */
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 1em; /* Slightly larger font size */
-    transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+    transition: background 0.3s ease; /* Added smooth transition for hover effect */
 }
 
 button:hover {
-    background: #0056b3;
-    transform: scale(1.05); /* Slight scale-up effect on hover */
+    background: #004080; /* Darkened button color on hover */
 }
 
 /* Footer styling */
 footer {
     text-align: center;
-    padding: 25px 0; /* Increased padding */
-    background: rgba(0, 0, 0, 0.8); /* Darker background for footer */
+    padding: 30px 0; /* Increased footer padding for better spacing */
+    background: #333; /* Changed footer background color to dark grey for contrast */
     color: #fff;
-    border-top: 5px solid #007bff; /* Added a top border for emphasis */
+    border-radius: 15px; /* Matched border radius with the container */
 }
