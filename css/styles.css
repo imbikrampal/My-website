@@ -1,128 +1,152 @@
-/* Set a background image for the body */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General settings for body */
 body {
     background-image: url('../background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
+    line-height: 1.6; /* Improved line-height for readability */
 }
 
-/* Container for centering content */
+/* Container settings */
 .container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 85%;
+    max-width: 1100px; /* Adjusted for a cleaner look */
+    margin: 20px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.9); /* Adds a slight transparency to the background */
-    border-radius: 10px; /* Adds rounded corners */
+    background: rgba(255, 255, 255, 0.95); /* Slightly reduced transparency */
+    border-radius: 15px; /* Larger radius for a smoother look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-/* Header section */
+/* Header section settings */
 header {
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for header */
-    color: #000000 ;
-    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.7); /* Slightly darker background for contrast */
+    color: #ffffff; /* Changed to white for better contrast */
+    padding: 30px 0; /* Increased padding for breathing space */
     text-align: center;
+    border-bottom: 5px solid #007bff; /* Added a bottom border for emphasis */
 }
 
 .header-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
-/* Profile picture styling */
+/* Profile picture settings */
 .profile-pic {
-    width: 120px;
+    width: 150px; /* Increased size for better visibility */
     height: auto;
     border-radius: 50%;
-    margin-bottom: 10px;
-    border: 3px solid #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+    border: 4px solid #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Larger shadow for prominence */
 }
 
-/* Navigation menu */
+/* Navigation menu settings */
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px; /* Increased gap for better spacing */
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff; /* Keep consistent with header text */
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 10px; /* Added padding for better clickability */
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s; /* Smooth transition for hover effects */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background: #007bff; /* Blue background on hover */
+    color: #fff; /* Keep text color consistent on hover */
 }
 
 /* Section styling */
 .section {
-    padding: 40px 0;
-    border-bottom: 1px solid #ddd;
+    padding: 50px 0; /* Increased padding for more space */
+    border-bottom: 1px solid #eee; /* Lighter border color */
 }
 
 h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2.5em; /* Larger font size for headings */
+    margin-bottom: 30px;
     text-align: center;
+    color: #007bff; /* Consistent heading color */
 }
 
-/* Education list styling */
+/* List styling for different sections */
 .education-list, .research-list, .skills-list, .achievements-list {
     list-style: none;
     padding: 0;
 }
 
 .education-list li, .research-list li, .skills-list li, .achievements-list li {
-    margin-bottom: 20px;
-    padding: 10px;
-    background: #f4f4f4;
-    border-radius: 5px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #f9f9f9; /* Slightly lighter background */
+    border-radius: 10px; /* Larger radius for smoother look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.education-list li:hover, .research-list li:hover, .skills-list li:hover, .achievements-list li:hover {
+    transform: scale(1.02); /* Slight scale-up effect on hover */
 }
 
 /* Form styling */
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 25px; /* Increased margin for spacing */
 }
 
 .form-group label {
     display: block;
     font-weight: bold;
+    color: #333; /* Darker color for better contrast */
 }
 
 .form-group input, .form-group textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 15px; /* Increased padding for comfort */
+    border: 1px solid #ccc; /* Lighter border color */
     border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
 }
 
 button {
     background: #007bff;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 24px; /* Increased padding for a bigger button */
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1em; /* Slightly larger font size */
+    transition: background 0.3s, transform 0.3s; /* Smooth transitions */
 }
 
 button:hover {
     background: #0056b3;
+    transform: scale(1.05); /* Slight scale-up effect on hover */
 }
 
 /* Footer styling */
 footer {
     text-align: center;
-    padding: 20px 0;
-    background: rgba(0, 0, 0, 0.6);
+    padding: 25px 0; /* Increased padding */
+    background: rgba(0, 0, 0, 0.8); /* Darker background for footer */
     color: #fff;
+    border-top: 5px solid #007bff; /* Added a top border for emphasis */
 }
