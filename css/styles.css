@@ -39,7 +39,7 @@ header {
 /* Profile picture styling */
 .profile-pic {
     width: 150px; /* Enlarged profile picture for better visibility */
-    height: auto;
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 20px; /* Increased margin for better separation */
     border: 4px solid #fff;
