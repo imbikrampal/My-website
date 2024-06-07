@@ -24,7 +24,7 @@ body {
 /* Header section */
 header {
     background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for header */
-    color: #fff;
+    color: #000000 ;
     padding: 20px 0;
     text-align: center;
 }
